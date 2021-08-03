@@ -17,9 +17,6 @@ class DistributedPiCalculationTest(unittest.TestCase):
         answer = monte_carlo_pi_estimation(-1)
         self.assertEqual(0.00, float(f"{answer:.{2}f}"))
 
-        answer = monte_carlo_pi_estimation(9000000.5)
-        self.assertRaises(TypeError, float(f"{answer:.{1}f}"))
-
 
 if __name__ == "__main__":
     unittest.main()
